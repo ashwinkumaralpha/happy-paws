@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Happy Paws Pet Spa – Grooming & Boarding in Bengaluru</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4faff;--ink:#16294a;--mut:#5a6b88;--blue:#2f7cf6;--sun:#ffc83d;--mint:#2fcf9f;--pur:#7b5cff;--pink:#ff8fb8;--pn:#fff;--ln:#dbe8f8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Nunito,sans-serif}
+h1,h2,h3{font-family:'Baloo 2',sans-serif;margin:0;line-height:1.05;font-weight:800}
+a{color:inherit}:focus-visible{outline:3px solid var(--pur);outline-offset:3px}
+.w{max-width:1100px;margin:auto;padding:0 22px}
+nav{position:sticky;top:0;z-index:5;background:#fff;border-bottom:3px solid var(--sun)}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:68px}
+nav b{font:800 1.5rem 'Baloo 2';color:var(--blue)}nav div{display:flex;align-items:center;gap:22px}nav a{text-decoration:none;font-weight:700;font-size:.95rem}
+.btn{display:inline-block;background:var(--blue);color:#fff;padding:14px 28px;border-radius:999px;text-decoration:none;font:800 1.05rem 'Baloo 2';border:0;cursor:pointer;box-shadow:0 5px 0 #1d56b8;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(2px);box-shadow:0 3px 0 #1d56b8}
+.btn.y{background:var(--sun);color:var(--ink);box-shadow:0 5px 0 #d49a0a}.btn.y:hover{box-shadow:0 3px 0 #d49a0a}
+nav .btn{padding:8px 20px;font-size:.95rem;box-shadow:0 3px 0 #1d56b8}
+.hero{background:linear-gradient(160deg,#dff0ff,#fff4cf);padding:64px 0 90px;position:relative;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.15fr 1fr;gap:30px;align-items:center;position:relative}
+.pill{display:inline-block;background:var(--mint);color:#053d2c;font-weight:800;padding:5px 16px;border-radius:999px;font-size:.88rem;margin-bottom:16px}
+.hero h1{font-size:clamp(2.8rem,7vw,5.4rem)}.hero h1 span{color:var(--blue)}.hero h1 u{text-decoration:none;background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero p{font-size:1.2rem;color:var(--mut);max-width:42ch;margin:18px 0 28px}
+.hero .btn+.btn{margin-left:10px}
+.blob{position:absolute;border-radius:50%;opacity:.55}
+.dog{width:100%;max-width:390px;margin:auto;display:block;animation:wig 3.5s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes wig{50%{transform:rotate(3deg)}}
+@media(max-width:780px){.hero .w{grid-template-columns:1fr}nav div a:not(.btn){display:none}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important}}
+.strip{background:var(--pur);color:#fff;overflow:hidden;white-space:nowrap;padding:12px 0;font:800 1.15rem 'Baloo 2'}
+.strip span{display:inline-block;animation:sl 26s linear infinite}@keyframes sl{to{transform:translateX(-50%)}}
+section{padding:78px 0}
+h2{font-size:clamp(2.1rem,5vw,3.3rem);margin-bottom:8px}.sub{color:var(--mut);max-width:50ch;margin:0 0 30px}
+.sv{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{border-radius:26px;padding:26px;display:flex;flex-direction:column;gap:6px;transition:transform .2s;color:var(--ink)}
+.card:hover{transform:translateY(-6px) rotate(-1deg)}
+.card .ic{font-size:2.4rem;line-height:1}.card h3{font-size:1.45rem}.card p{margin:0;flex:1;font-weight:600;opacity:.8;font-size:.95rem}
+.card .pr{display:flex;justify-content:space-between;align-items:center;margin-top:12px}.card b{font:800 1.4rem 'Baloo 2'}
+.card button{background:var(--ink);color:#fff;border:0;border-radius:999px;padding:7px 18px;font:800 .95rem 'Baloo 2';cursor:pointer}
+.why{background:var(--sun)}
+.why .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.why .g div{background:#fff;border-radius:22px;padding:22px}.why h3{font-size:1.25rem;margin-bottom:4px}.why p{margin:0;color:var(--mut);font-size:.95rem}
+.steps .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:22px;counter-reset:s}
+.steps .g div{counter-increment:s}.steps .g div:before{content:counter(s);display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--pink);font:800 1.5rem 'Baloo 2';margin-bottom:10px}
+.steps h3{font-size:1.3rem}.steps p{margin:4px 0 0;color:var(--mut)}
+.tm{background:linear-gradient(160deg,#e9e4ff,#dff0ff)}
+.tm .g{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.tm .g div{background:#fff;border-radius:22px;padding:24px;box-shadow:0 8px 22px #2f7cf61a}.tm p{margin:0 0 10px;font-weight:600}.tm span{color:var(--mut);font-size:.9rem}
+.bk{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:46px;align-items:start}
+.info p{margin:0 0 14px;color:var(--mut)}.info b{color:var(--ink)}
+form{background:#fff;border:3px solid var(--blue);border-radius:28px;padding:30px;display:grid;gap:14px;box-shadow:0 10px 0 var(--sun)}
+label{font-weight:700;font-size:.9rem;display:block;margin-bottom:4px}
+input,select,textarea{width:100%;padding:12px;border:2px solid var(--ln);border-radius:14px;background:var(--bg);color:var(--ink);font:inherit}
+.r{display:grid;grid-template-columns:1fr 1fr;gap:12px}#msg{min-height:1.5em;font-weight:800;color:#0b8a63}#msg.err{color:#b4430f}
+footer{background:var(--ink);color:#cfe0ff;padding:26px 0;text-align:center;font-size:.92rem}
+</style>
+</head>
+<body>
+<nav><div class="w"><b>🐾 Happy Paws</b><div><a href="#services">Services</a><a href="#how">How it works</a><a class="btn" href="#book">Book now</a></div></div></nav>
+
+<header class="hero">
+<div class="blob" style="width:260px;height:260px;background:var(--pink);top:-80px;right:-60px"></div>
+<div class="blob" style="width:160px;height:160px;background:var(--mint);bottom:-50px;left:8%"></div>
+<div class="w"><div>
+<span class="pill">Now open in Koramangala, Bengaluru</span>
+<h1>Clean pups. <span>Happy</span> <u>tails.</u></h1>
+<p>Gentle grooming, cosy boarding and playful daycare for dogs and cats. Run by certified pet lovers.</p>
+<a class="btn" href="#book">Book a grooming</a><a class="btn y" href="#services">See services</a></div>
+<svg class="dog" viewBox="0 0 300 300" aria-hidden="true"><ellipse cx="150" cy="286" rx="90" ry="8" fill="#16294a22"/><ellipse cx="62" cy="130" rx="38" ry="70" fill="#a8683a" transform="rotate(14 62 130)"/><ellipse cx="238" cy="130" rx="38" ry="70" fill="#a8683a" transform="rotate(-14 238 130)"/><circle cx="150" cy="150" r="104" fill="#e9b27a"/><ellipse cx="150" cy="188" rx="58" ry="46" fill="#fff0dc"/><circle cx="112" cy="132" r="14" fill="#16294a"/><circle cx="188" cy="132" r="14" fill="#16294a"/><circle cx="116" cy="127" r="5" fill="#fff"/><circle cx="192" cy="127" r="5" fill="#fff"/><ellipse cx="150" cy="170" rx="19" ry="13" fill="#16294a"/><path d="M150 183v12M126 200c12 12 36 12 48 0" stroke="#16294a" stroke-width="5" fill="none" stroke-linecap="round"/><path d="M138 203c0 26 24 26 24 0z" fill="#ff8fb8"/><path d="M60 270c-10-36 30-46 90-46s100 10 90 46z" fill="#2f7cf6"/><circle cx="150" cy="234" r="12" fill="#ffc83d"/></svg>
+</div></header>
+
+<div class="strip"><span>🛁 Spa baths &nbsp;✂️ Breed-style cuts &nbsp;🏠 Cosy boarding &nbsp;🎾 Daycare play &nbsp;🚐 Free pickup &amp; drop &nbsp;🛁 Spa baths &nbsp;✂️ Breed-style cuts &nbsp;🏠 Cosy boarding &nbsp;🎾 Daycare play &nbsp;🚐 Free pickup &amp; drop &nbsp;</span></div>
+
+<section id="services"><div class="w"><h2>Treats for every tail</h2><p class="sub">Pick a service and book in under a minute. Prices for small to medium pets.</p>
+<div class="sv" id="sv"></div></div></section>
+
+<section class="why"><div class="w"><h2>Why pet parents trust us</h2><p class="sub" style="color:#4a3a05">Safe, gentle and always transparent.</p>
+<div class="g"><div><h3>Certified groomers</h3><p>Trained in breed-specific cuts and gentle handling.</p></div><div><h3>Vet on call</h3><p>A partner vet checks in for boarding guests.</p></div><div><h3>Live photo updates</h3><p>Get photos of your pet on WhatsApp during the stay.</p></div><div><h3>Pet-safe products</h3><p>Hypoallergenic shampoos, no harsh chemicals.</p></div></div></div></section>
+
+<section class="steps" id="how"><div class="w"><h2>Easy as a walk in the park</h2><p class="sub">Four simple steps.</p>
+<div class="g"><div><h3>Book online</h3><p>Choose a service, date and time.</p></div><div><h3>We pick up</h3><p>Free pickup within 5 km, or drop in.</p></div><div><h3>Pamper time</h3><p>Bath, trim, play and treats.</p></div><div><h3>Fresh and happy</h3><p>Back home, smelling great.</p></div></div></div></section>
+
+<section class="tm"><div class="w"><h2>Wagging reviews</h2><p class="sub">From pet parents around Bengaluru.</p>
+<div class="g"><div><p>“Bruno came back smelling amazing and wagging non-stop. The photo updates were so sweet.”</p><span>Karthik M., Labrador dad</span></div><div><p>“Boarded Miso for 4 nights. She was calm and cared for. Will book again.”</p><span>Sneha R., cat mom</span></div><div><p>“Easy booking, on-time pickup and honest prices. Highly recommend.”</p><span>Arjun P., Beagle dad</span></div></div></div></section>
+
+<section id="book"><div class="w bk">
+<div class="info"><h2>Book your pet's spa day</h2><p class="sub">Send a request and we'll confirm by call or WhatsApp.</p>
+<p><b>Visit</b><br>80 Feet Road, Koramangala, Bengaluru 560034</p><p><b>Call</b><br>+91 98765 43210</p><p><b>Open</b><br>Daily, 9 AM to 8 PM</p></div>
+<form id="f">
+<div><label for="cname">Your name</label><input id="cname" required minlength="2"></div>
+<div><label for="phone">Phone</label><input id="phone" type="tel" required pattern="[0-9+ ]{10,14}"></div>
+<div class="r"><div><label for="pet">Pet's name</label><input id="pet" required></div><div><label for="guests">Pet type</label><select id="guests"><option>Dog</option><option>Cat</option><option>Other</option></select></div></div>
+<div><label for="sv2">Service</label><select id="sv2"></select></div>
+<div class="r"><div><label for="date">Date</label><input id="date" type="date" required></div><div><label for="time">Time</label><input id="time" type="time" required></div></div>
+<div><label for="note">Notes (breed, allergies…)</label><textarea id="note" rows="2"></textarea></div>
+<button class="btn" id="go" type="submit">Book now 🐾</button><div id="msg" role="status"></div>
+</form></div></section>
+
+<footer>© 2026 Happy Paws Pet Spa · Made with love in Bengaluru</footer>
+
+<script>
+// BACKEND URL: leave '' if the backend serves this page (recommended).
+// If you host this page separately (GitHub Pages/Netlify), put your backend URL here, e.g. 'https://happy-paws.onrender.com'
+const API='';
+const S=[["🛁","Bath & Brush","Shampoo, blow-dry, ear and nail care.",600,"#cfe6ff"],["✂️","Full Grooming","Bath plus breed-style haircut and styling.",1200,"#ffe7a3"],["🏠","Boarding","Cosy rooms, walks and play. Per night.",800,"#c9f4e4"],["🎾","Daycare","Supervised play and rest. Per day.",500,"#e3dbff"],["💅","Spa & Nails","Paw balm, nail trim and teeth cleaning.",450,"#ffd3e4"]];
+sv.innerHTML=S.map((x,i)=>`<div class="card" style="background:${x[4]}"><div class="ic">${x[0]}</div><h3>${x[1]}</h3><p>${x[2]}</p><div class="pr"><b>₹${x[3]}</b><button data-i="${i}">Book</button></div></div>`).join('');
+sv2.innerHTML=S.map(x=>`<option>${x[1]} (₹${x[3]})</option>`).join('');
+sv.onclick=e=>{const i=e.target.dataset.i;if(i!==undefined){sv2.selectedIndex=i;document.getElementById('book').scrollIntoView({behavior:'smooth'})}};
+date.min=new Date().toISOString().split('T')[0];
+f.addEventListener('submit',async e=>{e.preventDefault();go.disabled=true;msg.className='';msg.textContent='Sending…';
+ try{const r=await fetch(API+'/api/booking',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({name:cname.value,phone:phone.value,date:date.value,time:time.value,guests:guests.value,note:'Pet: '+pet.value+' | Service: '+sv2.value+(note.value?' | '+note.value:'')})});
+ const d=await r.json();if(!r.ok)throw new Error(d.error||'Error');msg.textContent='Woof! Request received. We will confirm shortly 🐶';f.reset()}
+ catch(x){msg.className='err';msg.textContent=x instanceof TypeError?'Preview mode: connect the backend to receive bookings.':x.message+'. Please call us.'}
+ go.disabled=false});
+</script>
+</body>
+</html>
